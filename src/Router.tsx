@@ -7,10 +7,13 @@ import OrderConfirmed from './pages/OrderConfirmed/OrderConfirmed.page'
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/finish-order" element={<FinishOrder />} />
-        <Route path="/order-confirmed" element={<OrderConfirmed />} />
+      <Route path="/coffeeDelivery" element={<DefaultLayout />}>
+        <Route path="/coffeeDelivery" element={<HomePage />} />
+        <Route path="/coffeeDelivery/finish-order" element={<FinishOrder />} />
+        <Route
+          path="/coffeeDelivery/order-confirmed"
+          element={<OrderConfirmed />}
+        />
       </Route>
     </Routes>
   )

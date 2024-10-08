@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <div className="container">
-        <NavLink to="/">
+        <NavLink to="/coffeeDelivery">
           <img src={coffeeDeliveryLogo} alt="" />
         </NavLink>
 
@@ -24,7 +24,7 @@ const Header = () => {
             Penha, SC
           </HeaderButton>
 
-          <NavLink to="/finish-order">
+          <NavLink to="/coffeeDelivery/finish-order">
             <HeaderButton variant="yellow">
               {cartQuantity >= 1 && <span>{cartQuantity}</span>}
               <ShoppingCart size={20} weight="fill" />

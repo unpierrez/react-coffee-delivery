@@ -24,7 +24,7 @@ const Card = ({ coffee }: CoffeeProps) => {
 
   return (
     <CardContainer>
-      <img src={`/coffeesImages/${coffee.photo}`} alt="" />
+      <img src={`/coffeeDelivery/coffeesImages/${coffee.photo}`} alt="" />
       <TagsContainer>
         {coffee.tags.map((tag) => (
           <Tag key={Math.floor(Date.now() * Math.random()).toString(36)}>

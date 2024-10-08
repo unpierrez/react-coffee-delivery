@@ -6,11 +6,11 @@ import {
   TagsContainer,
   Tag,
 } from './CoffeeCatalog.styled'
-import useCoffeCatalog from './CoffeCatalog.hook'
+import useCoffeeCatalog from './CoffeeCatalog.hook'
 
 const CoffeCatalog = () => {
   const { handleTagSelect, filteredCoffees, uniqueTags, selectedTag } =
-    useCoffeCatalog()
+    useCoffeeCatalog()
 
   return (
     <CoffeCatalogContainer className="container">

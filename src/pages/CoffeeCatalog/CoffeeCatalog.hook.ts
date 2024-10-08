@@ -1,7 +1,7 @@
 import { coffeData } from '../../data/Coffees/Coffees.data'
 import { useState } from 'react'
 
-const useCoffeCatalog = () => {
+const useCoffeeCatalog = () => {
   const [selectedTag, setSelectedTag] = useState<string | null>(null)
 
   const handleTagSelect = (tag: string | null) => {
@@ -18,4 +18,4 @@ const useCoffeCatalog = () => {
   return { handleTagSelect, filteredCoffees, uniqueTags, selectedTag }
 }
 
-export default useCoffeCatalog
+export default useCoffeeCatalog

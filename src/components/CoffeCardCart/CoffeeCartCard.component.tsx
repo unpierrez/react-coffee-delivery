@@ -1,20 +1,20 @@
 import { Trash } from 'phosphor-react'
 import { QuantityInput } from '../QuantityInput/QuantityInput.component'
 import { RegularText } from '../Typography/Typography'
-import { CoffeeCartCardProps } from './CoffeCartCard.types'
+import { CoffeeCartCardProps } from './CoffeeCartCard.types'
 import {
   ActionsContainer,
   CoffeeCartCardContainer,
   RemoveButton,
 } from './CoffeeCartCard.styled'
-import useCoffeCartCard from './CoffeCartCard.hook'
+import useCoffeeCartCard from './CoffeeCartCard.hook'
 
 const CoffeeCartCard = ({ coffee }: CoffeeCartCardProps) => {
   const { formattedPrice, handleIncrease, handleDecrease, handleRemove } =
-    useCoffeCartCard({ coffee })
+    useCoffeeCartCard({ coffee })
   return (
     <CoffeeCartCardContainer>
-      <img src={`/coffeesImages/${coffee?.photo}`} alt="" />
+      <img src={`/coffeeDelivery/coffeesImages/${coffee?.photo}`} alt="" />
       <div className="description-container">
         <div className="description-container-top">
           <RegularText color="subtitle">{coffee?.name}</RegularText>

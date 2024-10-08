@@ -1,8 +1,8 @@
 import { useCart } from '../../hooks/useCart/useCart.hook'
 import { formatMoney } from '../../utils/formatMoney'
-import { CoffeeCartCardProps } from './CoffeCartCard.types'
+import { CoffeeCartCardProps } from './CoffeeCartCard.types'
 
-const useCoffeCartCard = ({ coffee }: CoffeeCartCardProps) => {
+const useCoffeeCartCard = ({ coffee }: CoffeeCartCardProps) => {
   const { changeCartItemQuantity, removeCartItem } = useCart()
   const coffeeTotal = coffee.price * coffee.quantity
   const formattedPrice = formatMoney(coffeeTotal)
@@ -26,4 +26,4 @@ const useCoffeCartCard = ({ coffee }: CoffeeCartCardProps) => {
   }
 }
 
-export default useCoffeCartCard
+export default useCoffeeCartCard

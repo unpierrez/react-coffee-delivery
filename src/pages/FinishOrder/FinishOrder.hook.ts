@@ -15,7 +15,7 @@ const useFinishOrder = () => {
   const { handleSubmit, formState } = confirmOrderForm
   const { cleanCart } = useCart()
   const handleConfirmOrder = (data: ConfirmOrderFormData) => {
-    navigate('/order-confirmed', {
+    navigate('/coffeeDelivery/order-confirmed', {
       state: data,
     })
 
