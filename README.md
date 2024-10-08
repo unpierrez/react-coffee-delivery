@@ -1,9 +1,9 @@
 # Sobre o projeto:
-- Desafio/Figma disponibilizado na formação React da Rocketseat. 
+Desafio/Figma disponibilizado na formação React da Rocketseat. 
 # Instalação e Configuração:
-- npm install: Para instalar as dependências.
+npm install: Para instalar as dependências.
 # Comandos de Desenvolvimento:
-- npm run dev: Para rodar o projeto.
+npm run dev: Para rodar o projeto.
 # Tecnologias Utilizadas no Projeto:
 - React
 - React Hook Form
